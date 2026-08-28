@@ -210,11 +210,9 @@
             key-positions = <26 28>;
         };
 
-        // Studio Unlock Combo - all three right thumb keys
-        combo_studio_unlock {
-          timeout-ms = <50>;
-          key-positions = <53 54 55>;
-          bindings = <&studio_unlock>;
+        combo_unlock {
+            key-positions = <0 4>;
+            bindings = <&studio_unlock>;
         };
     };
 

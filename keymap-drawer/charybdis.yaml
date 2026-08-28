@@ -116,5 +116,5 @@ combos:
   k: SPACE
 - p: [26, 28]
   k: SPACE
-- p: [53, 54, 55]
+- p: [0, 4]
   k: ZMK Studio
