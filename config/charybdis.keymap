@@ -351,6 +351,22 @@
         };
     };
 
+    macros {
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_WIN &kp SPACE>;
+            label = "LANG";
+        };
+
+        screenshoot: screenshoot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL &kp LEFT_SHIFT &kp PRINTSCREEN>;
+            label = "SCREENSHOOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -384,12 +400,12 @@
             label = "Symbol";
             display-name = "Symbol";
             bindings = <
-&kp F1  &kp F2  &kp F3          &kp F4          &kp F5           &kp F6           &kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP      &trans   &kp N7  &kp N8  &kp N9   &trans   &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans   &kp N4  &kp N5  &kp N6   &kp N0   &trans
-&trans  &trans  &trans          &trans          &trans           &trans           &kp DOT  &kp N1  &kp N2  &kp N3   &trans   &trans
-                                &trans          &trans           &trans           &trans   &trans
-                                                &trans           &trans           &trans
+&kp F1  &kp F2        &kp F3          &kp F4          &kp F5           &kp F6           &kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans        &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP      &trans   &kp N7  &kp N8  &kp N9   &trans   &trans
+&trans  &screenshoot  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans   &kp N4  &kp N5  &kp N6   &kp N0   &trans
+&trans  &trans        &trans          &trans          &trans           &lang            &kp DOT  &kp N1  &kp N2  &kp N3   &trans   &trans
+                                      &trans          &trans           &trans           &trans   &trans
+                                                      &trans           &trans           &trans
             >;
         };
 
