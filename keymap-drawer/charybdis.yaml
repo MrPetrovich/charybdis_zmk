@@ -48,12 +48,12 @@ layers:
   - ','
   - .
   - /
-  - ']'
+  - RIGHT SHIFT
   - Mouse
-  - {t: LEFT WIN, h: Symbol}
+  - {t: LEFT WIN, h: Symb}
   - {t: RET, h: Function}
   - SPACE
-  - Number
+  - sy
   - LCTRL
   - SPACE
   - BSPC
@@ -97,8 +97,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Number
-  - Symbol
+  - sy
+  - Symb
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,7 +114,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Symbol:
+  Symb:
   - F1
   - F2
   - F3
@@ -171,55 +171,55 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Number:
+  sy:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BOOT LDR
-  - '&sys_reset'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '!'
   - '@'
-  - '#'
   - $
-  - '%'
+  - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ^
-  - '&'
-  - KP MULTIPLY
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - <
+  - '='
+  - '>'
+  - '%'
+  - {t: ▽, type: trans}
+  - '['
+  - _
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
   - (
-  - )
-  - DEL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '-'
-  - +
+  - )
+  - {t: ▽, type: trans}
+  - '%'
   - '{'
+  - ;
   - '}'
+  - '!'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '*'
+  - ':'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '|'
   - '~'
+  - '&'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -417,7 +417,7 @@ combos:
 - p: [35, 47]
   k: ENTER
 - p: [0, 11, 47, 36]
-  k: {t: Symbol, h: toggle}
+  k: {t: Symb, h: toggle}
 - p: [11, 23]
   k: DELETE
 - p: [31, 22]
