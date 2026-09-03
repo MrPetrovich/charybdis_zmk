@@ -50,12 +50,12 @@ layers:
   - /
   - RIGHT SHIFT
   - Mouse
-  - {t: LEFT WIN, h: Numb}
+  - Numb
   - {t: RET, h: Function}
   - SPACE
   - Symb
   - LCTRL
-  - SPACE
+  - RIGHT GUI
   - BSPC
   Mouse:
   - '&sys_reset'
@@ -179,7 +179,7 @@ layers:
   - '#'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '`'
   - ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
