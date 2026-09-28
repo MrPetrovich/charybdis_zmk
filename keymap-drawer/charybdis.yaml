@@ -51,8 +51,8 @@ layers:
   - RIGHT SHIFT
   - Mouse
   - Numb
-  - {t: RET, h: Function}
-  - SPACE
+  - {t: SPACE, h: Function}
+  - RETURN
   - Symb
   - LCTRL
   - RIGHT GUI
