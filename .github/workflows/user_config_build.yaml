@@ -37,7 +37,7 @@ jobs:
       build_matrix: ${{ env.build_matrix }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install yaml2json
         run: python3 -m pip install remarshal
@@ -58,7 +58,7 @@ jobs:
       matrix: ${{ fromJson(needs.matrix.outputs.build_matrix) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create build directory
         run: |

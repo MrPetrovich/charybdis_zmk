@@ -85,7 +85,7 @@ jobs:
       drawings: ${{ steps.artifact-upload-step.outputs.artifact-id }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # So the reference to the parent commit is available when amending
           # See:
