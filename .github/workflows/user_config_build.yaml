@@ -20,7 +20,7 @@ on:
         type: string
       keymap_path:
         description: "Path to the keymap directory"
-        default: "boards/shields/charybdis/keymaps"
+        default: "boards/shields/charybdis-bt/keymaps"
         required: false
         type: string
       fallback_binary:

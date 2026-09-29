@@ -16,7 +16,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - run: python scripts/convert_keymap.py -c q2c --in-path "$GITHUB_WORKSPACE/config/charybdis.keymap"
+
+      - name: Create QWERTY keymap
+        run: cp "$GITHUB_WORKSPACE/config/charybdis.keymap" "$GITHUB_WORKSPACE/config/qwerty.keymap"
+
+      - name: Convert to Colemak DH
+        run: python scripts/convert_keymap.py -c q2c --in-path "$GITHUB_WORKSPACE/config/charybdis.keymap"
 
       - uses: actions/upload-artifact@v4
         with:
@@ -26,6 +31,8 @@ jobs:
   build:
     needs: convert-and-store-keymap
     uses: ./.github/workflows/user_config_build.yaml
+    with:
+      keymap_path: "boards/shields/charybdis-bt/keymaps"
     # uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
   keymap_images:
