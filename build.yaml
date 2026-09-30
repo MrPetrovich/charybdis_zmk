@@ -19,18 +19,18 @@
 ---
 include:
   # QWERTY BT
-  - board: nice_nano_v2
-    shield: charybdis_left
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # - board: nice_nano_v2
+  #  shield: charybdis_left
+  #  keymap: qwerty
+  #  format: bt
+  #  artifact-name: charybdis_qwerty_left
+  #- board: nice_nano_v2
+  #  shield: charybdis_right
+  #  keymap: qwerty
+  #  format: bt
+  #  artifact-name: charybdis_qwerty_right
+  #  snippet: studio-rpc-usb-uart
+  #  cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   # # Colemak DH BT
   # - board: nice_nano_v2
@@ -60,7 +60,9 @@ include:
      shield: charybdis_dongle
      keymap: qwerty
      format: dongle
-      artifact-name: charybdis_qwerty_dongle
+     artifact-name: charybdis_qwerty_dongle
+     snippet: studio-rpc-usb-uart
+     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   # # Colemak DH Dongle
   # - board: nice_nano_v2
